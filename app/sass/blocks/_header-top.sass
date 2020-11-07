@@ -1,0 +1,74 @@
+.container
+	max-width: 1170px
+	margin: 0 auto
+	width: 100%
+.header-top
+	max-height: 80px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		margin-top: 20px
+	&__logo
+		text-align: left
+	&__sellphone, &__officephone
+		text-align: right
+	&__name
+		display: block
+		text-transform: uppercase
+		font-size: 18px
+		width: 100%
+		+semibold
+	&__subtitle
+		display: block
+		font-size: 14px
+		color: $metalcolor
+		+light
+	&__btn
+		background-color: transparent
+		border: 2px solid $bluecolor
+		color: $bluecolor
+		text-transform: uppercase
+		font-size: 14px
+		padding: 15px 10px
+		margin-bottom: 10px
+		outline: none
+		cursor: pointer
+		border-radius: 4px
+		+semibold
+
+.menu-btn
+	display: block
+	position: relative
+	width: 40px
+	height: 40px
+	background-color: transparent
+	border: none
+	cursor: pointer
+	margin-bottom: 13px
+	outline: none
+	&__span
+		position: absolute
+		top: 50%
+		margin-top: 1.5px
+		left: 50%
+		margin-left: -12.5px
+		width: 25px
+		height: 3px
+		background-color: $bluecolor
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -1.5px
+			left: 50%
+			margin-left: -12.5px
+			width: 25px
+			height: 3px
+			background-color: $bluecolor
+			transition: .5s
+		&::before
+			transform: translateY(-10px)
+		&::after
+			transform: translateY(10px)
