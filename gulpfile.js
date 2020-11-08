@@ -79,7 +79,7 @@ gulp.task('prebuild', async function() {
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
 	
-	var buildImg = gulp.src('app/img/*') // Переносим HTML в продакшен
+	var buildImg = gulp.src('app/img/**/*') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist/img'));
     
 });

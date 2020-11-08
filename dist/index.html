@@ -13,25 +13,163 @@
 	<header class="header">
 		<div class="container">
 			<div class="header-top">
-				<button class="header-top__menu-btn">
-					<span class="line">M</span>
-				</button>
-				<div class="header-top__logo">
-					<span class="header-top__name">Фабрика скинали №1</span>
-					<span class="header-top__subtitle">ведущий производитель скинали</span>
+				<div class="header-top__wrapper">
+					<button class="header-top__nav-btn nav-btn">
+						<span class="nav-btn__span"></span>
+					</button>
+					<div class="header-top__logo">
+						<span class="header-top__name"><a href="#">Фабрика скинали №1</a></span>
+						<span class="header-top__subtitle">ведущий производитель скинали</span>
+					</div>
+					<div class="header-top__sellphone">
+						<span class="header-top__name"><a href="#">+7 912 123-45-67</a></span>
+						<span class="header-top__subtitle">без выходных 9-21</span>
+					</div>
+					<div class="header-top__officephone">
+						<span class="header-top__name"><a href="#">+7 499 123-45-67</a></span>
+						<span class="header-top__subtitle">info@mail.ru</span>
+					</div>
+					<button class="header-top__btn">Получить консультацию</button>
 				</div>
-				<div class="header-top__sellphone">
-					<span class="header-top__name">+7 912 123-45-67</span>
-					<span class="header-top__subtitle">без выходных 9-21</span>
+			</div>
+
+			<div class="nav-bar">
+				<div class="nav-bar__wrapper">
+					<nav class="nav-bar__content">
+						<a href="#" class="nav-bar__link">Главная</a>
+						<a href="#" class="nav-bar__link">Продукция</a>
+						<a href="#" class="nav-bar__link">Каталог</a>
+						<a href="#" class="nav-bar__link">Примеры работ</a>
+						<a href="#" class="nav-bar__link">Примерка изображений</a>
+						<a href="#" class="nav-bar__link">Стоимость дилерам</a>
+						<a href="#" class="nav-bar__link">О скинали</a>
+					</nav>
 				</div>
-				<div class="header-top__officephone">
-					<span class="header-top__name">+7 912 123-45-67</span>
-					<span class="header-top__subtitle">без выходных 9-21</span>
-				</div>
-				<button class="header-top__btn">Получить консультацию</button>
 			</div>
 		</div>
+
+		<section class="hero">
+			<div class="container">
+				<div class="hero__title">
+					<h1>Гарантия<br>минимальной цены<br>на скинали</h1>
+				</div>
+				<span class="hero__span">от 3 000 р/м2</span>
+				<button class="hero__btn btn">Заказать скинали</button>
+			</div>
+		</section>
 	</header>
+
+	<section class="offer">
+		<div class="container">
+			<div class="offer__wrapper">
+				<h2 class="offer__title">Оставьте заявку на расчет</h2>
+				<span class="offer__subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
+				<form action="#" class="offer__form form">
+					<div class="form__wrapper">
+
+						<div class="form__item">
+							<label for="form__select" class="form__label">Вид стекла</label>
+							<select class="form__input" name="form__select" id="form__select">
+								<option selected value="s1">С печатью</option>
+								<option value="s2">Закаленное</option>
+								<option value="s3">Стандартное</option>
+							</select>
+						</div>
+
+						<div class="form__item">
+							<label class="form__label" for="width">Ширина, см</label>
+							<input class="form__input" type="text" name="" id="width">
+						</div>
+
+						<div class="form__item">
+							<label class="form__label" for="height">Высота, см</label>
+							<input class="form__input last-child" type="text" name="" id="height">
+						</div>
+
+						<div class="form__checkboxses checkboxes">
+							<div class="checkboxes__item">
+								<input type="checkbox" name="montage" id="montage">
+								<label class="checkboxes__label" for="montage">Монтаж</label>
+							</div>
+							<div class="checkboxes__item">
+								<input type="checkbox" name="delivery" id="delivery">
+								<label class="checkboxes__label" for="delivery">Доставка</label>
+							</div>
+						</div>
+
+						<div class="form__item">
+							<input class="form__input" type="text" placeholder="Ваше имя">
+						</div>
+
+						<div class="form__item">
+							<input class="form__input" type="tel" name="" id="" placeholder="Ваш телефон">
+						</div>
+
+						<div class="form__item">
+							<input class="form__input btn form__btn last-child" type="submit" value="получить скидку">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="container">
+			<div class="doc-title">
+				<h2 class="features__title">Наши преимущества</h2>
+			</div>
+
+			<div class="features__wrapper">
+				<div class="features__item">
+					<div class="features__img">
+						<img src="./img/features/feature-1.png" alt="Бесплатный дизайн-макет">
+					</div>
+					<div class="features__name">Бесплатный <br>дизайн-макет</div>
+				</div>
+
+				<div class="features__item">
+					<div class="features__img">
+						<img src="./img/features/feature-2.png" alt="Пожизненная гарантия">
+					</div>
+					<div class="features__name">Пожизненная <br>гарантия</div>
+				</div>
+
+				<div class="features__item">
+					<div class="features__img">
+						<img src="./img/features/feature-3.png" alt="Большой каталог изображений">
+					</div>
+					<div class="features__name">Большой <br>каталог изображений</div>
+				</div>
+
+				<div class="features__item">
+					<div class="features__img">
+						<img src="./img/features/feature-4.png" alt="100% соблюдение сроков">
+					</div>
+					<div class="features__name">100% соблюдение<br>сроков</div>
+				</div>
+
+				<div class="features__item">
+					<div class="features__img">
+						<img src="./img/features/feature-5.png" alt="Собственное производство">
+					</div>
+					<div class="features__name">Собственное<br>производство</div>
+				</div>
+
+				<div class="features__item">
+					<div class="features__img">
+						<img src="./img/features/feature-6.png" alt="Минимальная цена в городе">
+					</div>
+					<div class="features__name"> Минимальная цена в городе <br>от 1600 р метр</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
 </body>
+
+
 
 </html>
