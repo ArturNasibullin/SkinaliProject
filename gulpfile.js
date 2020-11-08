@@ -2,7 +2,7 @@ var gulp      		= require('gulp'), // Подключаем Gulp
 	sass         	= require('gulp-sass'), //Подключаем Sass пакет
 	// qcmq 			= require('group-css-media-queries'),
     browserSync 	= require('browser-sync'), // Подключаем Browser Sync
-	imagemin     	= require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
+	// imagemin     	= require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
     del         	= require('del'), // Подключаем библиотеку для удаления файлов и папок
     pngquant     	= require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache       	= require('gulp-cache'), // Подключаем библиотеку кеширования
@@ -43,17 +43,18 @@ gulp.task('clean', async function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('img', function() {
-	return gulp.src('app/img/**/*') // Берем все изображения из app
-		.pipe(cache(imagemin({ // С кешированием
-		// .pipe(imagemin({ // Сжимаем изображения без кеширования
-			interlaced: true,
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
-		}))/**/)
-		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
-});
+// gulp.task('img', function() {
+// 	return gulp.src('app/img/**/*') // Берем все изображения из app
+// 		.pipe(cache(imagemin({ // С кешированием
+// 		// .pipe(imagemin({ // Сжимаем изображения без кеширования
+// 			interlaced: true,
+// 			progressive: true,
+// 			svgoPlugins: [{removeViewBox: false}],
+// 			use: [pngquant()]
+// 		}))/**/)
+// 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+// });
+
 
 
 // gulp.task('group-css-media-queries', function () {
@@ -76,7 +77,10 @@ gulp.task('prebuild', async function() {
     .pipe(gulp.dest('dist/js'));
     
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-    .pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('dist'));
+	
+	var buildImg = gulp.src('app/img/*') // Переносим HTML в продакшен
+	.pipe(gulp.dest('dist/img'));
     
 });
  
@@ -91,6 +95,6 @@ gulp.task('watch', function() {
 	gulp.watch(['app/js/main.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 gulp.task('default', gulp.parallel('css','sass', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass', 'scripts'));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'sass', 'scripts'));
 
 
