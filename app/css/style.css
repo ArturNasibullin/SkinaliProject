@@ -126,7 +126,7 @@ input[type="checkbox"] {
   font-size: 25px;
   text-align: center;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   text-transform: uppercase;
   font-family: 'Proxima Nova Semibold', sans-serif; }
 
@@ -464,23 +464,52 @@ input[type="checkbox"] {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.catalog-item {
+.catalog__item {
   width: 50%;
   margin-bottom: 20px;
   position: relative; }
-  .catalog-item__name {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-family: 'Proxima Nova Semibold', sans-serif; }
-  .catalog-item__hover-btns {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 15px; }
-  .catalog-item__order-btn {
-    cursor: pointer;
-    font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.catalog__more {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.catalog-item__name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.catalog-item__hover-btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 15px; }
+
+.catalog-item__order-btn {
+  cursor: pointer;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.catalog-more__subtitle {
+  font-size: 15px;
+  margin-top: 18px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: black; }
