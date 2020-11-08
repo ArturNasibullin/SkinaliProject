@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  background-color: #f1f1f1; }
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -288,8 +291,11 @@ select {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 80px 80px;
-  background-color: #f78a8a; }
+  padding: 50px 75px;
+  background: #fff url(../img/offer-bg.png) no-repeat right;
+  margin-top: -100px;
+  -webkit-box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, 0.1); }
 
 .offer__title {
   font-size: 25px;
@@ -311,11 +317,11 @@ select {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding-right: 100px;
-  background-color: #c2baba; }
+  padding-right: 100px; }
 
 .form__item {
-  width: 33.3333%; }
+  width: 33.3333%;
+  margin-bottom: 30px; }
 
 .form__label {
   display: block;
@@ -330,8 +336,58 @@ select {
   height: 80px;
   outline: #618eee;
   padding-left: 7px;
+  border: 1px solid #596164;
+  border-right: 0;
   font-family: 'Proxima Nova Light', sans-serif; }
 
 .form__checkboxses {
   display: block;
   width: 100%; }
+
+.form__btn {
+  border-radius: 0;
+  padding-left: 35px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.last-child {
+  border-right: 1px solid #596164; }
+
+input[type="checkbox"] {
+  display: none; }
+  input[type="checkbox"]:checked + label::before {
+    background-color: #618eee; }
+
+.checkboxes {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+  .checkboxes__item {
+    width: 150px;
+    height: auto;
+    position: relative; }
+  .checkboxes__label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Light', sans-serif; }
+    .checkboxes__label::before {
+      content: '';
+      display: inline-block;
+      margin-right: 20px;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid #dddddd; }
