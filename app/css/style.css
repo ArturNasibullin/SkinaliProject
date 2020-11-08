@@ -92,12 +92,16 @@ select {
   width: 100%; }
 
 .header-top {
+  z-index: 99;
   max-height: 80px; }
   .header-top__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -106,9 +110,6 @@ select {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     margin-top: 20px; }
   .header-top__logo {
     text-align: left; }
@@ -127,16 +128,21 @@ select {
     font-family: 'Proxima Nova Light', sans-serif; }
   .header-top__btn {
     background-color: transparent;
-    border: 2px solid #507fe1;
-    color: #507fe1;
+    border: 2px solid #618eee;
+    color: #618eee;
     text-transform: uppercase;
     font-size: 14px;
     padding: 15px 10px;
-    margin-bottom: 10px;
     outline: none;
     cursor: pointer;
     border-radius: 4px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     font-family: 'Proxima Nova Semibold', sans-serif; }
+    .header-top__btn:hover {
+      color: #fff;
+      background-color: #618eee; }
 
 .menu-btn {
   display: block;
@@ -146,7 +152,6 @@ select {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-bottom: 13px;
   outline: none; }
   .menu-btn__span {
     position: absolute;
@@ -156,7 +161,7 @@ select {
     margin-left: -12.5px;
     width: 25px;
     height: 3px;
-    background-color: #507fe1; }
+    background-color: #618eee; }
     .menu-btn__span::before, .menu-btn__span::after {
       content: '';
       position: absolute;
@@ -166,7 +171,7 @@ select {
       margin-left: -12.5px;
       width: 25px;
       height: 3px;
-      background-color: #507fe1;
+      background-color: #618eee;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s; }
@@ -179,14 +184,67 @@ select {
           -ms-transform: translateY(10px);
               transform: translateY(10px); }
 
+.nav-bar {
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%); }
+  .nav-bar__wrapper {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Proxima Nova Regular', sans-serif; }
+  .nav-bar__content {
+    position: absolute;
+    background-color: #618eee;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    top: 20px;
+    width: 100%; }
+  .nav-bar__link {
+    font-size: 16px;
+    padding: 15px 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .nav-bar__link:first-child {
+      padding-left: 5px; }
+    .nav-bar__link:last-child {
+      padding-right: 5px; }
+    .nav-bar__link:hover {
+      color: #e2e1e1; }
+  .nav-bar--active {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%); }
+
 .hero {
-  background: url(../img/header-bg.jpg) no-repeat center;
+  background: url(../img/header-bg.jpg) no-repeat center 20px;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 270px; }
   .hero__title {
+    padding-top: 80px;
     margin-bottom: 45px;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     color: #252525;
     font-family: 'Proxima Nova Regular', sans-serif; }
@@ -201,8 +259,15 @@ select {
   font-size: 15px;
   padding: 15px 35px;
   color: #fff;
-  background-color: #507fe1;
-  border: 1px solid #507fe1;
+  background-color: #618eee;
+  border: 1px solid #618eee;
   outline: none;
   border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   font-family: 'Proxima Nova Semibold', sans-serif; }
+  .btn:hover {
+    background-color: #4872ce;
+    border: 1px solid #4872ce; }
