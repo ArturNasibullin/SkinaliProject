@@ -502,11 +502,18 @@ input[type="checkbox"] {
   display: flex;
   position: absolute;
   bottom: 0;
-  right: 15px; }
+  right: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0; }
 
 .catalog-item__order-btn {
   cursor: pointer;
   font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.catalog-item--hover .catalog-item__hover-btns {
+  opacity: 1; }
 
 .catalog-more__subtitle {
   font-size: 15px;
@@ -533,6 +540,19 @@ input[type="checkbox"] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center; }
+
+.subsection__item {
+  width: 24%;
+  overflow: hidden; }
+
+.subsection__img {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .subsection__img:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .subsection__name {
   font-size: 20px;

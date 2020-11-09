@@ -1,11 +1,18 @@
 $(function() {
-	let item = $('.prices__item');
-	
+	let pricesItem = $('.prices__item');
 
-	item.hover(function(){
+	pricesItem.hover(function(){
 		$(this).addClass('prices__item--hovered');
 	}, function(){
-		item.removeClass('prices__item--hovered');
+		pricesItem.removeClass('prices__item--hovered');
 	});
 
+
+	let catalogitem = $('.catalog-item');
+
+	catalogitem.hover(function(){
+		$(this).addClass('catalog-item--hover');
+	}, function(){
+		catalogitem.removeClass('catalog-item--hover');
+	});
 });
