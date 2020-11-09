@@ -366,7 +366,7 @@ input[type="checkbox"] {
   height: 80px;
   outline: #618eee;
   padding-left: 7px;
-  border: 1px solid #596164;
+  border: 1px solid #6770741e;
   border-right: 0;
   font-family: 'Proxima Nova Light', sans-serif; }
 
@@ -379,9 +379,6 @@ input[type="checkbox"] {
   padding-left: 35px;
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif; }
-
-.last-child {
-  border-right: 1px solid #596164; }
 
 .checkboxes {
   margin-bottom: 30px;
@@ -735,5 +732,31 @@ input[type="checkbox"] {
   font-family: 'Proxima Nova Regular', sans-serif; }
 
 .discount__wrapper {
+  background: #ddd url(../img/discount.png) no-repeat right;
+  background-size: contain;
   margin-top: 150px;
-  padding: 60px 70px; }
+  padding: 60px 70px;
+  background-color: #fff; }
+
+.discount__title {
+  font-size: 25px;
+  letter-spacing: 0.75 px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.discount__subtitle {
+  display: block;
+  margin-top: 25px;
+  font-size: 21px;
+  font-weight: 300;
+  max-width: 830px;
+  font-family: 'Proxima Nova Regular', sans-serif; }
+
+.discount__form {
+  margin-top: 45px; }
+
+.discount__private {
+  font-size: 17px;
+  margin-left: 45px;
+  margin-top: 20px;
+  font-family: 'Proxima Nova Regular', sans-serif; }

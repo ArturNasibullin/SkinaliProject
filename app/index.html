@@ -83,7 +83,7 @@
 
 						<div class="form__item">
 							<label class="form__label" for="height">Высота, см</label>
-							<input class="form__input last-child" type="text" name="height" id="height">
+							<input class="form__input" type="text" name="height" id="height">
 						</div>
 
 						<div class="form__checkboxses checkboxes">
@@ -106,7 +106,7 @@
 						</div>
 
 						<div class="form__item">
-							<input class="form__input btn form__btn last-child" type="submit" value="получить скидку">
+							<input class="form__input btn form__btn" type="submit" value="получить скидку">
 						</div>
 					</div>
 				</form>
@@ -426,7 +426,7 @@
 	<section class="testimonials">
 		<div class="container">
 			<div class="section-title">
-				<div class="h2 testimonials__title">Отзывы наших клиентов</div>
+				<h2 class=" testimonials__title">Отзывы наших клиентов</h2>
 			</div>
 
 			<div class="testimonials__wrapper">
@@ -463,35 +463,55 @@
 	<section class="discount">
 		<div class="container">
 			<div class="discount__wrapper">
-				<h2 class="discount__title"></h2>
+				<h2 class="discount__title">Ищите где дешевле и лучше?</h2>
 				<span class="discount__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле,
-					укажите ее - и мы вам пересчитаем заказ с максимальной скидкой</span>
+					укажите ее и мы вам пересчитаем заказ с максимальной скидкой</span>
 
 				<form action="#" class="discount__form form">
 					<div class="form__wrapper">
 						<div class="form__item">
-							<label class="form__label" for="username">Ваше имя</label>
-							<input class="form__input" type="text" name="username" id="username">
+							<input class="form__input" placeholder="Ваше имя" type="text" name="username" id="username">
 						</div>
 
 						<div class="form__item">
-							<label class="form__label" for="usertel">Ваш телефон</label>
-							<input class="form__input last-child" type="text" name="usertel" id="usertel">
+							<input class="form__input" placeholder="Ваш телефон" type="text" name="usertel"
+								id="usertel">
 						</div>
 						<div class="form__item">
-							<label class="form__label" for="userprice">Ваша цена</label>
-							<input class="form__input last-child" type="text" name="userprice" id="userprice">
+							<input class="form__input" placeholder="Ваша цена" type="text" name="userprice"
+								id="userprice">
 						</div>
 
 						<div class="form__item">
-							<input class="form__input btn form__btn last-child" type="submit" value="получить скидку">
+							<input class="form__input btn form__btn" type="submit" value="Получить расчет со скидкой">
 						</div>
-						<span>Ваши данные надежно защищены. <br>Отправление заявки ни к чему не обязывает.</span>
+						<span class="discount__private">Ваши данные надежно защищены. <br>Отправление заявки ни к чему
+							не обязывает.</span>
 					</div>
 
 
 			</div>
 	</section>
+
+	<section class="manufacture">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="manufacture__title">О производстве</h2>
+			</div>
+			<div class="manufacture__wrapper">
+
+				<div class="manufacture__img"><img src="./img/manufacturing.jpg" alt="Производство"></div>
+				<div class="manufacture__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum ullam
+					praesentium, facilis voluptates dignissimos ex quo veritatis, laudantium ea illo autem sed optio
+					eaque accusamus, magnam reiciendis iure rem quos?Lorem ipsum dolor sit amet, consectetur adipisicing
+					elit. Hic eligendi, cupiditate facilis optio similique minus ex, blanditiis in deleniti impedit quia
+					debitis corporis quibusdam explicabo voluptates reiciendis amet beatae nisi?
+				</div>
+
+			</div>
+		</div>
+	</section>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
