@@ -25,13 +25,24 @@
 	font-weight: normal;
 	font-style: normal;
 	}
+@font-face {
+	font-family: 'Proxima Nova Light Italic';
+	src: url('../fonts/ProximaNova-LightIt.eot');
+	src: url('../fonts/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-LightIt.woff') format('woff'),
+	url('../fonts/ProximaNova-LightIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
 
 @mixin regular {
 	font-family: 'Proxima Nova Regular', sans-serif;
 }
 @mixin light {
 	font-family: 'Proxima Nova Light', sans-serif;
-	color: rgb(0, 0, 0);
+}
+@mixin lightIt {
+	font-family: 'Proxima Nova Light Italic', sans-serif;
 }
 @mixin semibold {
 	font-family: 'Proxima Nova Semibold', sans-serif;

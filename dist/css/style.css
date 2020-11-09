@@ -112,12 +112,21 @@ input[type="checkbox"] {
     background-color: #4872ce;
     border: 1px solid #4872ce; }
 
-.doc-title {
+.catalog-btn {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #507ee18c;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.section-title {
   display: block;
   font-size: 25px;
   text-align: center;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   text-transform: uppercase;
   font-family: 'Proxima Nova Semibold', sans-serif; }
 
@@ -164,7 +173,7 @@ input[type="checkbox"] {
   font-size: 14px;
   color: #596164;
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #000; }
+  color: black; }
 
 .header-top__btn {
   background-color: transparent;
@@ -323,7 +332,7 @@ input[type="checkbox"] {
   font-size: 21px;
   margin-bottom: 48px;
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #000; }
+  color: black; }
 
 .form__wrapper {
   display: -webkit-box;
@@ -345,7 +354,7 @@ input[type="checkbox"] {
   font-size: 18px;
   margin-bottom: 15px;
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #000; }
+  color: black; }
 
 .form__input {
   width: 100%;
@@ -356,7 +365,7 @@ input[type="checkbox"] {
   border: 1px solid #596164;
   border-right: 0;
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #000; }
+  color: black; }
 
 .form__checkboxses {
   display: block;
@@ -365,6 +374,7 @@ input[type="checkbox"] {
 .form__btn {
   border-radius: 0;
   padding-left: 35px;
+  color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif; }
 
 .last-child {
@@ -396,7 +406,7 @@ input[type="checkbox"] {
     font-size: 17px;
     cursor: pointer;
     font-family: 'Proxima Nova Light', sans-serif;
-    color: #000; }
+    color: black; }
     .checkboxes__label::before {
       content: '';
       display: inline-block;
@@ -439,4 +449,180 @@ input[type="checkbox"] {
   font-size: 20px;
   text-align: center;
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #000; }
+  color: black; }
+
+.catalog__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.catalog__item {
+  width: 50%;
+  margin-bottom: 20px;
+  position: relative; }
+
+.catalog__more {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.catalog-item__name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.catalog-item__hover-btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0; }
+
+.catalog-item__order-btn {
+  cursor: pointer;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.catalog-item--hover .catalog-item__hover-btns {
+  opacity: 1; }
+
+.catalog-more__subtitle {
+  font-size: 15px;
+  margin-top: 18px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: black; }
+
+.subsection__title {
+  font-size: 24px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.subsection__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+
+.subsection__item {
+  width: 24%;
+  overflow: hidden; }
+
+.subsection__img {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .subsection__img:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+
+.subsection__name {
+  font-size: 20px;
+  margin-top: 30px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: black; }
+
+.prices__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.prices__item {
+  width: 25%;
+  margin-bottom: 10px;
+  position: relative; }
+
+.prices__hover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  width: 98%;
+  z-index: 1;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0; }
+
+.prices__img {
+  z-index: 0; }
+
+.prices__subtitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 15px;
+  background-color: #fff;
+  margin-right: 7px;
+  z-index: 2; }
+
+.prices__item--hovered .prices__hover {
+  opacity: 1; }
+
+.prices-subtitle__name {
+  font-size: 15px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: black; }
+
+.prices-subtitle__value {
+  font-size: 15px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
