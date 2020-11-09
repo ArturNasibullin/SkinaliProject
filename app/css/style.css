@@ -539,3 +539,69 @@ input[type="checkbox"] {
   margin-top: 30px;
   font-family: 'Proxima Nova Light', sans-serif;
   color: black; }
+
+.prices__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.prices__item {
+  width: 25%;
+  margin-bottom: 10px;
+  position: relative; }
+
+.prices__hover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 98%;
+  z-index: 1;
+  background-color: #ffffffbe;
+  position: absolute;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0; }
+
+.prices__img {
+  z-index: 0; }
+
+.prices__subtitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 15px;
+  background-color: #fff;
+  margin-right: 7px;
+  z-index: 2; }
+
+.prices__item--hovered .prices__hover {
+  opacity: 1; }
+
+.prices-subtitle__name {
+  font-size: 15px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: black; }
+
+.prices-subtitle__value {
+  font-size: 15px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }

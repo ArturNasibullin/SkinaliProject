@@ -1,0 +1,38 @@
+.prices
+	&__wrapper
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		width: 25%
+		margin-bottom: 10px
+		position: relative
+	&__hover
+		display: flex
+		justify-content: center
+		width: 98%
+		z-index: 1
+		background-color: #ffffffbe
+		position: absolute
+		transition: all .3s
+		opacity: 0
+	&__img
+		z-index: 0
+	&__subtitle
+		display: flex
+		justify-content: space-between
+		padding: 20px 15px
+		background-color: #fff
+		margin-right: 7px
+		z-index: 2
+.prices__item--hovered .prices__hover
+	opacity: 1
+
+.prices-subtitle
+	&__name
+		font-size: 15px
+		+light
+	&__value
+		font-size: 15px
+		+semibold
