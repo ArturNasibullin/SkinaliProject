@@ -827,3 +827,59 @@ input[type="checkbox"] {
   padding-left: 80px;
   font-size: 24px;
   color: #618eee; }
+
+.footer {
+  background: #262626;
+  height: 175px; }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__item {
+    margin-top: 40px;
+    padding: 0 15px;
+    width: 33.3333%;
+    color: #ffffff; }
+
+.footer-text__name {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  font-family: 'Proxima Nova Semibold', sans-serif; }
+
+.footer-text__slogan {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Regular', sans-serif; }
+
+.footer-text__copyrights {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: .5;
+  font-family: 'Proxima Nova Light', sans-serif; }
+
+.footer-partners {
+  text-align: center; }
+  .footer-partners__item {
+    display: inline-block;
+    padding: 0 10px; }
+
+.footer-contacts {
+  text-align: right; }
+  .footer-contacts__number {
+    font-size: 20px;
+    font-family: 'Proxima Nova Semibold', sans-serif; }
+  .footer-contacts__mail {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Proxima Nova Regular', sans-serif; }
+  .footer-contacts__socials {
+    margin-top: 10px;
+    font-size: 40px; }
+    .footer-contacts__socials a:hover {
+      color: #618eee; }
