@@ -1,5 +1,9 @@
 body
 	background-color: #f1f1f1
+.container
+	max-width: 1170px
+	margin: 0 auto
+	width: 100%
 
 input[type="checkbox"]
 	display: none
@@ -37,3 +41,6 @@ input[type="checkbox"]
 	margin-bottom: 70px
 	text-transform: uppercase
 	+semibold
+	@include _480
+		font-size: 18px
+		margin-top: 80px

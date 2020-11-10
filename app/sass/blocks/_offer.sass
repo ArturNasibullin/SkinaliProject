@@ -6,16 +6,31 @@
 		background: #fff url(../img/offer-bg.png) no-repeat right
 		margin-top: -100px
 		box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, 0.1)
+		@include _850
+			background: #fff
+			padding: 30px 30px
+
 	&__title
 		font-size: 25px
 		letter-spacing: 0.75px
 		text-transform: uppercase
 		margin-bottom: 30px
 		+semibold
+		@include _480
+			font-size: 22px
+			text-align: center
+
 	&__subtitle
 		font-size: 21px
 		margin-bottom: 48px
 		+light
+		@include _1170
+			// width: 500px
+		@include _768
+			text-align: justify
+		@include _480
+			width: 300px
+
 	&__form
 
 .form
@@ -23,9 +38,14 @@
 		display: flex
 		flex-wrap: wrap
 		padding-right: 100px
+		@include _850
+			flex-direction: column
+			padding-right: 0
 	&__item
 		width: 33.3333%
 		margin-bottom: 30px
+		@include _850
+			width: 100%
 	&__label
 		display: block
 		width: 100%
@@ -41,6 +61,9 @@
 		border: 1px solid #6770741e
 		border-right: 0
 		+light
+		@include _850
+			border: 1px solid #6770741e
+			height: 50px
 	&__checkboxses
 		display: block
 		width: 100%

@@ -3,6 +3,16 @@
 	background-size: cover
 	padding-top: 120px
 	padding-bottom: 270px
+	&__wrapper
+		padding: 0 15px
+	@include _979
+		background: url(../img/header-bg.jpg) no-repeat
+		background-position: 40%
+	@include _768
+		background-position: 35%
+	@include _480
+		background-position: 32%
+
 	&__title
 		padding-top: 80px
 		margin-bottom: 45px
@@ -10,9 +20,14 @@
 		text-transform: uppercase
 		color: #252525
 		+regular
+		@include _480
+			font-size: 18px
+			margin-bottom: 25px
 	&__span
 		display: block
 		margin-bottom: 70px
 		font-size: 30px
 		+semibold
+		@include _480
+			font-size: 20px
 	&__btn
