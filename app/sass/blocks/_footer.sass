@@ -9,7 +9,12 @@
 		padding: 0 15px
 		width: 33.3333%
 		color: #ffffff
+		@include _480
+			width: 50%
+
 .footer-text
+	@include _480
+		display: none
 	&__name
 		text-transform: uppercase
 		font-size: 18px
@@ -24,16 +29,24 @@
 		font-size: 14px
 		opacity: .5
 		+light
+		@include _768
+			margin-top: 20px
+
 .footer-partners
 	text-align: center
 	&__item
 		display: inline-block
 		padding: 0 10px
+		@include _979
+			margin-bottom: 20px
+
 .footer-contacts
 	text-align: right
 	&__number
 		font-size: 20px
 		+semibold
+		@include _600
+			font-size: 16px
 	&__mail
 		margin-top: 10px
 		font-size: 16px
@@ -44,3 +57,5 @@
 		& a
 			&:hover
 				color: $bluecolor
+		@include _768
+			font-size: 30px

@@ -2,14 +2,24 @@
 	&__wrapper
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-around
+		flex-direction: row
+		justify-content: center
+		padding: 0 20px
+
 	&__item
+		width: 33.333%
+		text-align: center
+		@include _480
+			width: 100%
+			margin-bottom: 30px
 	&__icon
 		margin: 0 auto
 		margin-bottom: 15px
 	&__text
 		font-size: 18px
 		+regular
+		@include _768
+			font-size: 16px
 	&__map
 		overflow: hidden
 		padding-top: 45px
@@ -29,9 +39,16 @@
 		font-size: 30px
 		font-weight: 600
 		+semibold
+		@include _768
+			font-size: 24px
 	&__link
 		display: inline-block
 		margin-left: 80px
 		font-size: 24px
 		color: #fff
 		width: 450px
+		@include _768
+			width: 350px
+			margin-left: 30px
+		@include _480
+			font-size: 18px

@@ -1003,16 +1003,43 @@ input[type="checkbox"] {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0 80px; }
+  @media (max-width: 768px) {
+    .manufacture__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .manufacture__img {
   width: 40%; }
+  @media (max-width: 768px) {
+    .manufacture__img {
+      margin-bottom: 30px;
+      width: 80%; } }
 
 .manufacture__text {
   text-align: justify;
+  padding-left: 15px;
   width: 50%;
   font-size: 20px;
   line-height: 1.55;
   font-family: 'Proxima Nova Regular', sans-serif; }
+  @media (max-width: 768px) {
+    .manufacture__text {
+      padding-left: 0px;
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .manufacture__text {
+      font-size: 16px; } }
 
 .contacts__wrapper {
   display: -webkit-box;
@@ -1022,9 +1049,24 @@ input[type="checkbox"] {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px; }
+
+.contacts__item {
+  width: 33.333%;
+  text-align: center; }
+  @media (max-width: 480px) {
+    .contacts__item {
+      width: 100%;
+      margin-bottom: 30px; } }
 
 .contacts__icon {
   margin: 0 auto;
@@ -1033,6 +1075,9 @@ input[type="checkbox"] {
 .contacts__text {
   font-size: 18px;
   font-family: 'Proxima Nova Regular', sans-serif; }
+  @media (max-width: 768px) {
+    .contacts__text {
+      font-size: 16px; } }
 
 .contacts__map {
   overflow: hidden;
@@ -1063,6 +1108,9 @@ input[type="checkbox"] {
   font-size: 30px;
   font-weight: 600;
   font-family: 'Proxima Nova Semibold', sans-serif; }
+  @media (max-width: 768px) {
+    .contacts__hook {
+      font-size: 24px; } }
 
 .contacts__link {
   display: inline-block;
@@ -1070,6 +1118,13 @@ input[type="checkbox"] {
   font-size: 24px;
   color: #fff;
   width: 450px; }
+  @media (max-width: 768px) {
+    .contacts__link {
+      width: 350px;
+      margin-left: 30px; } }
+  @media (max-width: 480px) {
+    .contacts__link {
+      font-size: 18px; } }
 
 .footer {
   background: #262626;
@@ -1088,6 +1143,13 @@ input[type="checkbox"] {
     padding: 0 15px;
     width: 33.3333%;
     color: #ffffff; }
+    @media (max-width: 480px) {
+      .footer__item {
+        width: 50%; } }
+
+@media (max-width: 480px) {
+  .footer-text {
+    display: none; } }
 
 .footer-text__name {
   text-transform: uppercase;
@@ -1105,18 +1167,27 @@ input[type="checkbox"] {
   font-size: 14px;
   opacity: .5;
   font-family: 'Proxima Nova Light', sans-serif; }
+  @media (max-width: 768px) {
+    .footer-text__copyrights {
+      margin-top: 20px; } }
 
 .footer-partners {
   text-align: center; }
   .footer-partners__item {
     display: inline-block;
     padding: 0 10px; }
+    @media (max-width: 979px) {
+      .footer-partners__item {
+        margin-bottom: 20px; } }
 
 .footer-contacts {
   text-align: right; }
   .footer-contacts__number {
     font-size: 20px;
     font-family: 'Proxima Nova Semibold', sans-serif; }
+    @media (max-width: 600px) {
+      .footer-contacts__number {
+        font-size: 16px; } }
   .footer-contacts__mail {
     margin-top: 10px;
     font-size: 16px;
@@ -1126,3 +1197,6 @@ input[type="checkbox"] {
     font-size: 40px; }
     .footer-contacts__socials a:hover {
       color: #618eee; }
+    @media (max-width: 768px) {
+      .footer-contacts__socials {
+        font-size: 30px; } }
