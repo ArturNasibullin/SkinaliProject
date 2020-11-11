@@ -6,22 +6,51 @@
 		padding: 60px 70px
 		background-color: #fff
 		box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, 0.1)
+		display: flex
+		flex-wrap: wrap
+		@include _850
+			background: #fff
+			margin-top: 50px
+			padding: 30px 35px
 	&__title
 		font-size: 25px
 		letter-spacing: 0.75 px
 		text-transform: uppercase
 		+semibold
+		@include _480
+			text-align: center
 	&__subtitle
 		display: block
 		margin-top: 25px
 		font-size: 21px
 		font-weight: 300
-		max-width: 830px
+		width: 830px
 		+regular
-	&__form
-		margin-top: 45px
+		@include _979
+			width: 600px
+			font-size: 18px
+		@include _480
+			text-align: justify
 	&__private
+		display: block
 		font-size: 17px
 		margin-left: 45px
-		margin-top: 20px
+		margin-top: 10px
 		+regular
+		@include _1170
+			margin-left: 0
+			width: 100%
+
+.discount-form
+	margin-top: 45px
+	&--btn
+		display: inline-block
+		border-radius: 0
+		@include _1170
+			font-size: 15px
+		@include _480
+			padding: 12px 14px
+			height: 50px
+	&__item
+		@include _480
+			width: 90%

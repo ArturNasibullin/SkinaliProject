@@ -5,12 +5,18 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		flex-wrap: wrap
+		@include _979
+			justify-content: center
+
 	&__item
 		display: flex
 		flex-direction: column
 		justify-content: center
 		text-align: center
 		position: relative
+		@include _979
+			margin-bottom: 40px
 		&::before
 			content: ''
 			width: 97%
@@ -20,9 +26,12 @@
 			position: absolute
 			top: 32%
 			right: -53%
+			@include _979
+				display: none
 		&:last-child
 			&::before
 				display: none
+
 	&__img
 		height: 56px
 		width: 51px
