@@ -45,3 +45,45 @@ input[type="checkbox"]
 		font-size: 18px
 		margin-top: 80px
 		padding: 0 10px
+
+.nav-bar
+	&__wrapper
+		position: relative
+		margin: 0 15px
+	&__content
+		position: absolute
+		padding: 20px 20px 10px 10px
+		top: 10px
+		left: 0
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: left
+		text-transform: uppercase
+		color: #ffffff
+		background-color: $bluecolor
+		width: 1.8 rem
+		z-index: 99
+		opacity: 0
+		transition: all .3s
+		border-radius: 3px
+		&--active
+			opacity: 1
+		+regular
+		@include _480
+			top: -48px
+		@include _350
+			top: 10px
+
+	&__link
+		font-size: 22px
+		cursor: pointer
+		padding: 0 20px
+		transition: all 0.2s
+		padding-bottom: 10px
+		&:hover
+			color: #e2e1e1
+		@include _979
+			font-size: 18px
+		@include _530
+			font-size: 16px

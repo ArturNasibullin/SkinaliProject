@@ -1,3 +1,4 @@
+
 $(function() {
 	let pricesItem = $('.prices__item');
 
@@ -15,6 +16,7 @@ $(function() {
 	}, function(){
 		catalogitem.removeClass('catalog-item--hover');
 	});
+	
 });
 
 $(window).on('load', (function() {
@@ -24,7 +26,8 @@ $(window).on('load', (function() {
 	});
 
 	$('.before-slider').slick({
-		draggable:false,
+		draggable: false,
+		swipe: false,
 		dots: true,
 		dotsClass: 'before-slider__dots',
 		prevArrow: $('.arrow-left'),
@@ -33,6 +36,12 @@ $(window).on('load', (function() {
 
 	$('.header-top__nav-btn').on('click', function(){
 		$('.nav-bar__content').toggleClass('nav-bar__content--active');
+	});
+
+	$('a[href^="#"]').click(function() {
+		let _href = $(this).attr('href');
+		$('html,body').animate({ scrollTop: $(_href).offset().top -50 + 'px'});
+		return false;
 	});
 
   }));
