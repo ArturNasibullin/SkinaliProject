@@ -16,3 +16,7 @@ $(function() {
 		catalogitem.removeClass('catalog-item--hover');
 	});
 });
+
+$(window).load(function() {
+	$(".before-after").twentytwenty();
+  });

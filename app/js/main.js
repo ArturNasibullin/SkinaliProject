@@ -16,3 +16,25 @@ $(function() {
 		catalogitem.removeClass('catalog-item--hover');
 	});
 });
+
+$(window).on('load', (function() {
+	$(".before-after").twentytwenty({
+		before_label: 'Без скинали',
+    	after_label: 'Со скинали',
+	});
+
+	$('.before-slider').slick({
+		draggable:false,
+		dots: true,
+		dotsClass: 'before-slider__dots',
+		prevArrow: $('.arrow-left'),
+		nextArrow: $('.arrow-right')
+	});
+
+	$('.header-top__nav-btn').on('click', function(){
+		$('.nav-bar__content').toggleClass('nav-bar__content--active');
+	});
+
+  }));
+
+
