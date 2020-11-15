@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Фабрика Скинали №1</title>
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- <link rel="stylesheet" href="./fonts/fontawesome/fontawesome.min.css"> -->
 	<link rel="stylesheet" href="./fonts/icons.css">
 
 </head>
@@ -30,39 +32,40 @@
 						<span class="header-top__name"><a href="#">+7 499 123-45-67</a></span>
 						<span class="header-top__subtitle">info@mail.ru</span>
 					</div>
-					<button class="header-top__btn">Получить консультацию</button>
-				</div>
-			</div>
+					<a href="#" class="header-top__btn modal-open">Получить консультацию</a>
 
-			<div class="nav-bar">
-				<div class="nav-bar__wrapper">
-					<nav class="nav-bar__content">
-						<a href="#" class="nav-bar__link">Главная</a>
-						<a href="#" class="nav-bar__link">Продукция</a>
-						<a href="#" class="nav-bar__link">Каталог</a>
-						<a href="#" class="nav-bar__link">Примеры работ</a>
-						<a href="#" class="nav-bar__link">Примерка изображений</a>
-						<a href="#" class="nav-bar__link">Стоимость дилерам</a>
-						<a href="#" class="nav-bar__link">О скинали</a>
-					</nav>
+					<div class="nav-bar">
+						<nav class="nav-bar__content">
+							<a href="#" data-scroll="#hero" class="nav-bar__link">Главная</a>
+							<a href="#" data-scroll="#features" class="nav-bar__link">Преимущества</a>
+							<a href="#" data-scroll="#catalog" class="nav-bar__link">Каталог</a>
+							<a href="#" data-scroll="#prices" class="nav-bar__link">Цены и виды скинали</a>
+							<a href="#" data-scroll="#stages" class="nav-bar__link">Как мы работаем</a>
+							<a href="#" data-scroll="#before" class="nav-bar__link">Примерка изображений</a>
+							<a href="#" data-scroll="#testimonials" class="nav-bar__link">Отзывы</a>
+							<a href="#" data-scroll="#discount" class="nav-bar__link">О скидках</a>
+							<a href="#" data-scroll="#manufacture" class="nav-bar__link">Производство</a>
+							<a href="#" data-scroll="#contacts" class="nav-bar__link">Контакты</a>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<section class="hero">
+		<section class="hero" id="hero">
 			<div class="container">
 				<div class="hero__wrapper">
 					<div class="hero__title">
 						<h1>Гарантия<br>минимальной цены<br>на скинали</h1>
 					</div>
 					<span class="hero__span">от 3 000 р/м2</span>
-					<button class="hero__btn btn">Заказать скинали</button>
+					<a href="#" class="hero__btn btn modal-open">Заказать скинали</a>
 				</div>
 			</div>
 		</section>
 	</header>
 
-	<section class="offer">
+	<section class="offer" id="offer">
 		<div class="container">
 			<div class="offer__wrapper">
 				<h2 class="offer__title">Оставьте заявку на расчет</h2>
@@ -117,7 +120,7 @@
 		</div>
 	</section>
 
-	<section class="features">
+	<section class="features" id="features">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="features__title">Наши преимущества</h2>
@@ -170,7 +173,7 @@
 		</div>
 	</section>
 
-	<section class="catalog">
+	<section class="catalog" id="catalog">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="catalog__title">Каталог скинали</h2>
@@ -180,7 +183,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-1.jpg" alt="Каталог-1"></div>
 					<div class="catalog-item__name catalog-btn">Коллажи</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -191,7 +194,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-2.jpg" alt="Каталог-2"></div>
 					<div class="catalog-item__name catalog-btn">Авторская коллекция</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -201,7 +204,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-3.jpg" alt="Каталог-3"></div>
 					<div class="catalog-item__name catalog-btn">Коллажи</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -211,7 +214,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-4.jpg" alt="Каталог-4"></div>
 					<div class="catalog-item__name catalog-btn">Авторская коллекция</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -221,7 +224,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-5.jpg" alt="Каталог-5"></div>
 					<div class="catalog-item__name catalog-btn">Коллажи</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -231,7 +234,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-6.jpg" alt="Каталог-6"></div>
 					<div class="catalog-item__name catalog-btn">Абстракция</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -241,7 +244,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-7.jpg" alt="Каталог-7"></div>
 					<div class="catalog-item__name catalog-btn">Коллажи</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -251,7 +254,7 @@
 					<div class="catalog-item__img"><img src="./img/catalog/catalog-8.jpg" alt="Каталог-8"></div>
 					<div class="catalog-item__name catalog-btn">Абстракция</div>
 					<div class="catalog-item__hover-btns">
-						<button class="catalog-item__order-btn catalog-btn"><a href="#">Заказать</a></button>
+						<button class="catalog-item__order-btn catalog-btn modal-open"><a href="#">Заказать</a></button>
 						<button class="catalog-item__like-btn catalog-btn"><img src="./img/catalog/heart.png"
 								alt="heart">
 						</button>
@@ -294,7 +297,7 @@
 		</div>
 	</div>
 
-	<section class="prices">
+	<section class="prices" id="prices">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="prices__title">Цены и виды скинали</h2>
@@ -308,7 +311,7 @@
 					</div>
 
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 
 				</div>
@@ -319,7 +322,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -329,7 +332,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -339,7 +342,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -349,7 +352,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -359,7 +362,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -369,7 +372,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -379,14 +382,14 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="stages">
+	<section class="stages" id="stages">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="stages__title">Этапы работ</h2>
@@ -426,24 +429,42 @@
 		</div>
 	</section>
 
-	<section class="before">
+	<section class="before" id="before">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="before__title">До и после</h2>
 			</div>
-			<div class="before-slider">
-				<div class="before-slider__item">
-					<div class="before-after">
-						<img src="img/before/1.jpg" alt="before-after">
-						<img src="img/before/2.jpg" alt="before-after">
+			<div class="before-slider-wrapper">
+				<div class="before-slider">
+					<div class="before-slider__item">
+						<div class="before-after">
+							<img src="img/before/1.jpg" alt="before-after">
+							<img src="img/before/2.jpg" alt="before-after">
+						</div>
+					</div>
+					<div class="before-slider__item">
+						<div class="before-after">
+							<img src="img/before/1.jpg" alt="before-after">
+							<img src="img/before/2.jpg" alt="before-after">
+						</div>
+					</div>
+					<div class="before-slider__item">
+						<div class="before-after">
+							<img src="img/before/1.jpg" alt="before-after">
+							<img src="img/before/2.jpg" alt="before-after">
+						</div>
 					</div>
 				</div>
-				<div class="before-slider__item"></div>
-				<div class="before-slider__item"></div>
+				<div class="before-slider-arrows">
+					<button class="arrow arrow-left" class="slick-prev"><img src="img/before/left.png"
+							alt="left button"></button>
+					<button class="arrow arrow-right" class="slick-next"><img src="img/before/right.png"
+							alt="right button"></button>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="testimonials">
+	<section class="testimonials" id="testimonials">
 		<div class="container">
 			<div class="section-title">
 				<h2 class=" testimonials__title">Отзывы наших клиентов</h2>
@@ -480,7 +501,7 @@
 		</div>
 	</section>
 
-	<section class="discount">
+	<section class="discount" id="discount">
 		<div class="container">
 			<div class="discount__wrapper">
 				<h2 class="discount__title">Ищите где дешевле и лучше?</h2>
@@ -514,7 +535,7 @@
 		</div>
 	</section>
 
-	<section class="manufacture">
+	<section class="manufacture" id="manufacture">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="manufacture__title">О производстве</h2>
@@ -536,7 +557,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="contacts__title">Контакты</h2>
@@ -568,7 +589,7 @@
 
 		<div class="contacts__question">
 			<span class="contacts__hook">Остались вопросы?</span>
-			<span class="contacts__link btn"><a href="#">Задайте их менеджеру</a></span>
+			<span class="contacts__link btn modal-open"><a href="#">Задайте их менеджеру</a></span>
 		</div>
 	</section>
 
@@ -606,7 +627,31 @@
 			<!-- /.footer__wrapper -->
 		</div>
 	</footer>
-
+	<div class="modal">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<a class="modal__close" href="#">&times</a>
+				<form action="#" class="modal__form form">
+					<div class="form__wrapper modal__form-wrapper">
+						<div class="modal__header">
+							<h3>Оставьте заявку и мы Вам перезвоним!</h3>
+						</div>
+						<div class="modal__item form__item">
+							<input type="text" placeholder="Ваше имя" name="username" id="username"
+								class="modal__input form__input">
+						</div>
+						<div class="modal__item form__item">
+							<input type="text" placeholder="Ваш телефон" name="usertel" id="usertel"
+								class="modal__input form__input">
+						</div>
+						<div class="modal__item form__item">
+							<input type="submit" class="btn modal__btn" value="Оставить заявку">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 
