@@ -1,21 +1,14 @@
-function openModal () {
-	const modal = $(.)
-}
-
-
-
 
 $(function() {
+	////Hover эффекты на каталоге
 	let pricesItem = $('.prices__item');
+	let catalogitem = $('.catalog-item');
 
 	pricesItem.hover(function(){
 		$(this).addClass('prices__item--hovered');
 	}, function(){
 		pricesItem.removeClass('prices__item--hovered');
 	});
-
-
-	let catalogitem = $('.catalog-item');
 
 	catalogitem.hover(function(){
 		$(this).addClass('catalog-item--hover');
@@ -40,6 +33,26 @@ $(function() {
 		}
 	});
 	
+	// Показать меню
+	$('.header-top__nav-btn').on('click', function(){
+		$('.nav-bar').toggleClass('nav-bar--active');
+	});
+
+	// Smooth scroll
+	$('[data-scroll]').on('click', function(event){
+		event.preventDefault();
+
+		let elementID = $(this).data('scroll');
+		let elementOffset = $(elementID).offset().top;
+		
+		$('html, body').animate({
+		scrollTop: elementOffset - 80
+		}, 1000);
+
+		$('.nav-bar').removeClass('nav-bar--active');
+		
+	});
+
 });
 
 $(window).on('load', (function() {
@@ -59,29 +72,30 @@ $(window).on('load', (function() {
 		nextArrow: $('.arrow-right')
 	});
 
-	// Показать меню
-	$('.header-top__nav-btn').on('click', function(){
-		$('.nav-bar').toggleClass('nav-bar--active');
+	// Модальное окно
+	$('.modal-open').click(function() {
+		$('.modal').fadeIn();
+		return false;
+	});	
+	
+	$('.modal__close').click(function() {
+		$(this).parents('.modal').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.modal').fadeOut();
+		}
 	});
+	
+	$('.modal').click(function(e) {
+		if ($(e.target).closest('.modal__wrapper').length == 0) {
+			$(this).fadeOut();					
+		}
+});
 
-	  // Smooth scroll
-	$('[data-scroll]').on('click', function(event){
-		event.preventDefault();
-
-		let elementID = $(this).data('scroll');
-		let elementOffset = $(elementID).offset().top;
-		
-
-		$('html, body').animate({
-		scrollTop: elementOffset - 80
-		}, 1000);
-
-
-		$('.nav-bar').removeClass('nav-bar--active');
-		
-	});
-
-  }));
 
   
 
