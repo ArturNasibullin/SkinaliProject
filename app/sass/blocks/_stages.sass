@@ -8,7 +8,6 @@
 		flex-wrap: wrap
 		@include _979
 			justify-content: center
-
 	&__item
 		display: flex
 		flex-direction: column
@@ -31,11 +30,13 @@
 		&:last-child
 			&::before
 				display: none
-
 	&__img
 		height: 56px
 		width: 51px
 		margin: 0 auto
+		transition: all 0.3s
+		&:hover
+			transform: scale(1.4)
 	&__name
 		font-size: 18px
 		margin-top: 40px

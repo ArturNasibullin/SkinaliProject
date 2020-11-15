@@ -33,23 +33,21 @@
 						<span class="header-top__subtitle">info@mail.ru</span>
 					</div>
 					<a href="#offer" class="header-top__btn ">Получить консультацию</a>
-				</div>
-			</div>
 
-			<div class="nav-bar">
-				<div class="nav-bar__wrapper">
-					<nav class="nav-bar__content">
-						<a href="#hero" class="nav-bar__link">Главная</a>
-						<a href="#features" class="nav-bar__link">Преимущества</a>
-						<a href="#catalog" class="nav-bar__link">Каталог</a>
-						<a href="#prices" class="nav-bar__link">Цены и виды скинали</a>
-						<a href="#stages" class="nav-bar__link">Как мы работаем</a>
-						<a href="#before" class="nav-bar__link">Примерка изображений</a>
-						<a href="#testimonials" class="nav-bar__link">Отзывы</a>
-						<a href="#discount" class="nav-bar__link">О скидках</a>
-						<a href="#manufacture" class="nav-bar__link">Производство</a>
-						<a href="#contacts" class="nav-bar__link">Контакты</a>
-					</nav>
+					<div class="nav-bar">
+						<nav class="nav-bar__content">
+							<a href="#" data-scroll="#hero" class="nav-bar__link">Главная</a>
+							<a href="#" data-scroll="#features" class="nav-bar__link">Преимущества</a>
+							<a href="#" data-scroll="#catalog" class="nav-bar__link">Каталог</a>
+							<a href="#" data-scroll="#prices" class="nav-bar__link">Цены и виды скинали</a>
+							<a href="#" data-scroll="#stages" class="nav-bar__link">Как мы работаем</a>
+							<a href="#" data-scroll="#before" class="nav-bar__link">Примерка изображений</a>
+							<a href="#" data-scroll="#testimonials" class="nav-bar__link">Отзывы</a>
+							<a href="#" data-scroll="#discount" class="nav-bar__link">О скидках</a>
+							<a href="#" data-scroll="#manufacture" class="nav-bar__link">Производство</a>
+							<a href="#" data-scroll="#contacts" class="nav-bar__link">Контакты</a>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -313,7 +311,7 @@
 					</div>
 
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 
 				</div>
@@ -324,7 +322,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -334,7 +332,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -344,7 +342,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -354,7 +352,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -364,7 +362,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -374,7 +372,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 				<div class="prices__item">
@@ -384,7 +382,7 @@
 						<div class="prices-subtitle__value">от 3500 р/м2</div>
 					</div>
 					<div class="prices__hover">
-						<button class="prices__btn btn">Оставить заявку</button>
+						<a href="#offer" class="prices__btn btn">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -629,7 +627,31 @@
 			<!-- /.footer__wrapper -->
 		</div>
 	</footer>
-
+	<div class="modal">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<a class="modal__close" href="#">&times</a>
+				<form action="#" class="modal__form form">
+					<div class="form__wrapper modal__form-wrapper">
+						<div class="modal__header">
+							<h3>Оставьте заявку и мы Вам перезвоним!</h3>
+						</div>
+						<div class="modal__item form__item">
+							<input type="text" placeholder="Ваше имя" name="username" id="username"
+								class="modal__input form__input">
+						</div>
+						<div class="modal__item form__item">
+							<input type="text" placeholder="Ваш телефон" name="usertel" id="usertel"
+								class="modal__input form__input">
+						</div>
+						<div class="modal__item form__item">
+							<input type="submit" class="btn modal__btn" value="Оставить заявку">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 

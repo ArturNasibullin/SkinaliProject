@@ -1,16 +1,29 @@
 
 .header-top
+	position: relative
 	&__wrapper
-		max-height: 80px
+		position: absolute
+		top: 0
+		left: 0
+		background-color: #fff
+		width: 100%
+		max-height: 1 rem
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
 		align-items: center
-		margin-top: 20px
-		padding: 0 15px
+		padding: 15px 15px
 		@include _480
 			max-height: 120px
-	&__nav-btn
+		&.fixed
+			position: fixed
+			background-color: #fff
+			// width: 100%
+			max-width: 1170px
+			top: 0
+			left: 50%
+			margin-left: -585px
+			z-index: 100
 	&__logo
 		text-align: left
 	&__sellphone, &__officephone
@@ -83,3 +96,41 @@
 			transform: translateY(-10px)
 		&::after
 			transform: translateY(10px)
+.nav-bar
+	transition: all .3s
+	z-index: 99
+	height: 0
+	transform: scaleY(0)
+	&--active
+		transform: scaleY(1)
+	&__content
+		position: absolute
+		padding: 20px 20px 10px 10px
+		top: 38px
+		left: -1135px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: left
+		text-transform: uppercase
+		color: #ffffff
+		background-color: $bluecolor
+		width: 1.8 rem
+		border-radius: 3px
+		+regular
+		@include _480
+			top: -48px
+		@include _350
+			top: 10px
+	&__link
+		font-size: 20px
+		cursor: pointer
+		padding: 0 20px
+		transition: all 0.2s
+		padding-bottom: 10px
+		&:hover
+			color: #e2e1e1
+		@include _979
+			font-size: 18px
+		@include _530
+			font-size: 16px
